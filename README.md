@@ -8,6 +8,7 @@ To install and run:
 * `npm install` to install all packages
 * `npm run start` to run the frontend
 * `npm run mock-server` to run the backend
+* app will be available at http://localhost:8200/
 
 
 

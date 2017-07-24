@@ -1,0 +1,10 @@
+ <div class="container main">
+  <div class="text-center">
+    <button class="btn btn-primary" (click)="rearrange()">Shuffle!</button>
+  </div>
+  <div class="groups">
+    <div class="group" *ngFor="let group of groupedAttendees">
+      <group [group]="group"></group>
+    </div>
+  </div>
+</div> 

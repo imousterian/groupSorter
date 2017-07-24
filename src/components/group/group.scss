@@ -1,0 +1,11 @@
+.group-summary {
+	padding: 2.5% 5% 2.5% 5%;
+}
+.group-header {
+	text-align:center;
+	background-color: lightsteelblue;
+	border-radius: 4px 4px 0 0;
+	&:hover, &:focus {
+		background-color: rgba(steelblue, 0.5);
+	}
+}

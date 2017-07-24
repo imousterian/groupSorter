@@ -1,0 +1,6 @@
+<div class="group-header">Group# {{group.id}}</div>
+<div class="group-body">
+  <div class="group-summary" *ngFor="let attendee of group.attendees; let i = index">
+    <attendee [person]="attendee"></attendee>
+  </div>
+</div>

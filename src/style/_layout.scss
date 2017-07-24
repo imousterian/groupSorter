@@ -1,0 +1,30 @@
+// some basic styles
+html, body {
+    height: 100%;
+    margin:0; 
+    padding:0; 
+}
+body {
+    font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: $base;
+    font-weight: $base-weight;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// overwriting bootstrap container
+.container {
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}

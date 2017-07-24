@@ -1,0 +1,34 @@
+.main {
+    margin-top: 50px;
+}
+.groups {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	padding: 1.5%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.group {
+    width: 100%;
+    margin-right: 20px;
+    height: 250px;
+    position: relative;
+	margin-bottom: 20px; 
+	padding-bottom: 30px; 
+	background: #fefff9;
+    box-shadow: rgba(black, 0.19) 0 0 8px 0;
+    border-radius: 5px;
+    @media (min-width: $screen-sm) {
+        width: 320px;
+    }
+    @media (min-width: $screen-md) {
+        width: 250px;
+    }
+}

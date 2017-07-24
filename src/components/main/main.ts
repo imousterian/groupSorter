@@ -92,7 +92,7 @@ export class MainPageComponent implements OnInit {
     Primarily because current architecture assumes that the main component fetches all data,
     then passes it in a proper format to group component, which passes attendees to the next component.
   */
-  mapUsersToGroups() {
+  mapUsersToGroups(): void {
     for (let i = 0; i < this.allGroups.length; i += 1) {
       let currentGroup: any = this.allGroups[i];
       let group: any = {};
@@ -134,7 +134,7 @@ export class MainPageComponent implements OnInit {
   /*
     Called from the template in order to rearrange groups
   */
-  rearrange() {
+  rearrange(): void {
     this.attendees = this.shuffle(this.attendees);
     this.persistShuffledGroupsToDatabase(null, true)
       .then(response => {
@@ -167,7 +167,6 @@ export class MainPageComponent implements OnInit {
   chunkArray(arr: Array<any>, chunkNum: number): Array<any> {
     let chunks: number = Math.ceil(arr.length / chunkNum);
     let chunkedArray: Array<any> = [];
-    this.groupedAttendees = [];
     for(let i = 0; i < chunks; i++){
       let start: number = i * chunkNum;
       let len: number = Math.min(arr.length - start, chunkNum);
